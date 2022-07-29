@@ -2,7 +2,7 @@
 
 ## **_What is igtk?_**
 
-Is A  Open Source program for each game designed to manipulate its graphics beyond the limits imposed by the game itself.
+Is An  Open Source program for each game designed to manipulate its graphics beyond the limits imposed by the game itself.
 
 All for the benefit of low-resource gamers (no graphics cards or low RAM), so I can assure you that igtk will allow you to run all available games at 60fps.
 
