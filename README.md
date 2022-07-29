@@ -1,3 +1,6 @@
+![Captura de pantalla 2022-07-29 144758](https://user-images.githubusercontent.com/82337156/181833376-559d4417-6866-4ab5-96c6-a34cdeb10396.png)
+
+Release 1.0.0 -> Download From Zippyshare => [https://www3.zippyshare.com/v/Jvofr7bT/file.html]https://www3.zippyshare.com/v/Jvofr7bT/file.html
 ## **_What is igtk?_**
 
 A specific program for each game designed to manipulate its graphics beyond the limits imposed by the game itself.
@@ -6,7 +9,7 @@ All for the benefit of low-resource gamers (no graphics cards or low RAM), so I 
 
 ## **_Igtk It's a miracle?!_**
 
-Yes it's up to you, well it only modifies the files that your own game brings, igtk doesn't install any additional software, it's just a legitimate editor of real-time game properties. If the specific game does not offer such an opportunity, it will be totally impossible, but not for me! :]
+Yes it's up to you, well it only modifies the files that your own game brings (*Journey.cfg* in this case), igtk doesn't install any additional software, it's just a legitimate editor of real-time game properties. If the specific game does not offer such an opportunity, it will be totally impossible, but not for me! :]
 ## Your participation is welcome
 You can request an igtk for any game, all requests are welcome!
 
