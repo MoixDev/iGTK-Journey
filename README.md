@@ -16,9 +16,4 @@ Yes it's up to you, well it only modifies the files that your own game brings, i
 
 Games with igtk
 
-
-+---------+---------------------+------------+-------------+
-| Game    | *Optimization ratio | Download   | Source Code |
-+=========+=====================+============+=============+
-| Journey | 90%                 | Zippyshare | Github      |
-+---------+---------------------+------------+-------------+
+Official Web: https://moissesa.blogspot.com/2022/07/igtk-integrated-graphics-toolkit.html
