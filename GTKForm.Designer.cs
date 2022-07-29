@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GTKForm));
-            this.button2 = new System.Windows.Forms.Button();
+            this.OpenConfigBtn = new System.Windows.Forms.Button();
             this.configPath = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -111,6 +111,12 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -119,12 +125,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.RunBtn = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -143,20 +143,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // OpenConfigBtn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.button2.Location = new System.Drawing.Point(560, 141);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Open";
-            this.button2.UseVisualStyleBackColor = true;
+            this.OpenConfigBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.OpenConfigBtn.Location = new System.Drawing.Point(560, 141);
+            this.OpenConfigBtn.Name = "OpenConfigBtn";
+            this.OpenConfigBtn.Size = new System.Drawing.Size(85, 23);
+            this.OpenConfigBtn.TabIndex = 5;
+            this.OpenConfigBtn.Text = "Open";
+            this.OpenConfigBtn.UseVisualStyleBackColor = true;
+            this.OpenConfigBtn.Click += new System.EventHandler(this.OpenConfigBtn_Click);
             // 
             // configPath
             // 
@@ -164,7 +165,7 @@
             this.configPath.Name = "configPath";
             this.configPath.Size = new System.Drawing.Size(449, 20);
             this.configPath.TabIndex = 4;
-            this.configPath.Text = "browse";
+            this.configPath.Text = "Find";
             // 
             // label2
             // 
@@ -1191,6 +1192,72 @@
             this.label32.TabIndex = 92;
             this.label32.Text = "< Screen >";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(623, 259);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Game Crash!";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button17);
+            this.groupBox1.Controls.Add(this.label34);
+            this.groupBox1.Controls.Add(this.label33);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(609, 100);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "1. Solution method; reset game graphics settings";
+            // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.button17.Location = new System.Drawing.Point(518, 22);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(85, 23);
+            this.button17.TabIndex = 12;
+            this.button17.Text = "Open";
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label34.Location = new System.Drawing.Point(6, 48);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(62, 15);
+            this.label34.TabIndex = 11;
+            this.label34.Text = "Similar to:";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label33.Location = new System.Drawing.Point(6, 63);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(541, 15);
+            this.label33.TabIndex = 10;
+            this.label33.Text = "C:\\Users\\(YOUR USER NAME)\\AppData\\Local\\Annapurna Interactive\\Journey\\Steam\\";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(6, 23);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(506, 22);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Text = "browse";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1240,7 +1307,7 @@
             this.exePath.Name = "exePath";
             this.exePath.Size = new System.Drawing.Size(370, 20);
             this.exePath.TabIndex = 64;
-            this.exePath.Text = "D:\\Games\\ABR\\Journey\\Journey.exe";
+            this.exePath.Text = "Find";
             // 
             // label14
             // 
@@ -1277,72 +1344,6 @@
             this.button24.UseVisualStyleBackColor = true;
             this.button24.Click += new System.EventHandler(this.findExe);
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.groupBox1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(623, 259);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Game Crash!";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(506, 22);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "browse";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button17);
-            this.groupBox1.Controls.Add(this.label34);
-            this.groupBox1.Controls.Add(this.label33);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(6, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(609, 100);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "1. Solution method; reset game graphics settings";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label33.Location = new System.Drawing.Point(6, 63);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(541, 15);
-            this.label33.TabIndex = 10;
-            this.label33.Text = "C:\\Users\\(YOUR USER NAME)\\AppData\\Local\\Annapurna Interactive\\Journey\\Steam\\";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label34.Location = new System.Drawing.Point(6, 48);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(62, 15);
-            this.label34.TabIndex = 11;
-            this.label34.Text = "Similar to:";
-            // 
-            // button17
-            // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.button17.Location = new System.Drawing.Point(518, 22);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(85, 23);
-            this.button17.TabIndex = 12;
-            this.button17.Text = "Open";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
             // GTKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1357,7 +1358,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.OpenConfigBtn);
             this.Controls.Add(this.configPath);
             this.Controls.Add(this.label2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1384,17 +1385,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button OpenConfigBtn;
         private System.Windows.Forms.TextBox configPath;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;

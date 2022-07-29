@@ -118,7 +118,7 @@ namespace GTK
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
                 InitialDirectory =Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
-                Title = "Browse .exe Files",
+                Title = "Select game main .exe File",
 
                 CheckFileExists = true,
                 CheckPathExists = true,
@@ -127,7 +127,6 @@ namespace GTK
                 RestoreDirectory = true,
 
                 ReadOnlyChecked = true,
-                ShowReadOnly = true
             };
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -158,6 +157,29 @@ namespace GTK
 
                 @"C:\Users\[[YOUR USER NAME]]]\AppData\Local\Annapurna Interactive\Journey\Steam\Jouney.cfg"
             ));
+        }
+
+        private void OpenConfigBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog
+            {
+                InitialDirectory =Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+                Title = @"Browse to C:\Users\  YOUR USER NAME  \AppData\Local\Annapurna Interactive\Journey\Steam\Jouney.cfg",
+
+                CheckFileExists = true,
+                CheckPathExists = true,
+
+                FilterIndex = 2,
+                RestoreDirectory = true,
+
+                ReadOnlyChecked = true,
+                ShowReadOnly = false
+            };
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                configPath.Text = openFileDialog1.FileName;
+            }
         }
     }
 }
