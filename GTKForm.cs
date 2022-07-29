@@ -181,5 +181,10 @@ namespace GTK
                 configPath.Text = openFileDialog1.FileName;
             }
         }
+
+        private void OpenGithubPage(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://moissesa.blogspot.com/2022/07/igtk-integrated-graphics-toolkit.html");
+        }
     }
 }
