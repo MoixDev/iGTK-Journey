@@ -14,7 +14,7 @@ The next igtk will be... [Vote now](https://www.opinionstage.com/dallen-roper-mo
 The amount with the most votes will be igtkado in the next 1.5 days!
 
 You don't want to vote, you want to decide!
-, Then submit your favorite game Here and it will be igtkado in the next 2 days.
+, Then submit your favorite game [Here](https://www.opinionstage.com/dallen-roper-moondoo-org/choose-the-next-candidate-who-will-receive-a-graphics-modification-toolkit-igtk-for-low-end-pcs-mainly) (suggesting an additional answer) and it will be igtkado in the next 2 days.
 
 ## Official Web:
 
