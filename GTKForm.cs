@@ -89,18 +89,23 @@ namespace GTK
             string tag = (string)thisButton.Tag;
             string text = thisButton.Text;
             string configPath_ = configPath.Text;
+            try
+            {
+                string configFile = File.ReadAllText(configPath_, Encoding.Default);
+                string dynamic_pattern = @"XYZ='\d+'".Replace("'", $"\"").Replace("XYZ", tag);
 
-            string configFile = File.ReadAllText(configPath_, Encoding.Default);
+                string finalConfig = Regex.Replace(configFile, dynamic_pattern, dynamic_pattern
+                    .Replace(@"\d+", text)
+                    .Replace(".*", ""));
 
-            string dynamic_pattern = @"XYZ='\d+'".Replace("'", $"\"").Replace("XYZ", tag);
+                write_config(configPath_, finalConfig);
 
-            string finalConfig = Regex.Replace(configFile, dynamic_pattern, dynamic_pattern
-                .Replace(@"\d+", text)
-                .Replace(".*", ""));
-
-            write_config(configPath_, finalConfig);
-
-            this.Text = dynamic_pattern + $"({text})";
+                this.Text = dynamic_pattern + $"({text})";
+            }
+            catch (Exception)
+            {
+                error_message();
+            }
         }
 
         private void RunBtn_Click(object sender, EventArgs e)
@@ -133,10 +138,26 @@ namespace GTK
 
         void write_config(string configPath_, string finalConfig)
         {
-            StreamWriter sw = new StreamWriter(configPath_);
-            sw.Write("");
-            sw.Write(finalConfig);
-            sw.Close();
+            try
+            {
+                StreamWriter sw = new StreamWriter(configPath_);
+                sw.Write("");
+                sw.Write(finalConfig);
+                sw.Close();
+            }
+            catch (Exception)
+            {
+                error_message();
+            }
+        }
+
+        void error_message()
+        {
+            MessageBox.Show("Firt open the [Jouney.cfg] file hosted on \n\n...\n\n To modify the game graphics"
+                .Replace("...",
+
+                @"C:\Users\[[YOUR USER NAME]]]\AppData\Local\Annapurna Interactive\Journey\Steam\Jouney.cfg"
+            ));
         }
     }
 }
