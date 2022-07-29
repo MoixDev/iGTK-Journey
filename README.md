@@ -1,21 +1,16 @@
- *What is igtk?*
-
-
+## **_What is igtk?_**
 
 A specific program for each game designed to manipulate its graphics beyond the limits imposed by the game itself.
 
 All for the benefit of low-resource gamers (no graphics cards or low RAM), so I can assure you that igtk will allow you to run all available games at 60fps.
 
-
-
-*Igtk It's a miracle?!*
+## **_Igtk It's a miracle?!_**
 
 Yes it's up to you, well it only modifies the files that your own game brings, igtk doesn't install any additional software, it's just a legitimate editor of real-time game properties. If the specific game does not offer such an opportunity, it will be totally impossible, but not for me! :]
 
 
 
-Games with igtk
+## Official Web:
 
-Official Web: https://moissesa.blogspot.com/2022/07/igtk-integrated-graphics-toolkit.html
-
-![image](https://user-images.githubusercontent.com/82337156/181808896-7f61c85d-37f5-40b0-a587-783f4477dc98.png)
+  [https://moissesa.blogspot.com/2022/07/igtk-integrated-graphics-toolkit.html](https://moissesa.blogspot.com/2022/07/igtk-integrated-graphics-toolkit.html)
+ 
