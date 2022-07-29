@@ -108,33 +108,6 @@ namespace GTK
             }
         }
 
-        private void RunBtn_Click(object sender, EventArgs e)
-        {
-            Process.Start(exePath.Text);
-        }
-
-        private void findExe(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog
-            {
-                InitialDirectory =Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
-                Title = "Select game main .exe File",
-
-                CheckFileExists = true,
-                CheckPathExists = true,
-
-                FilterIndex = 2,
-                RestoreDirectory = true,
-
-                ReadOnlyChecked = true,
-            };
-
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                exePath.Text = openFileDialog1.FileName;
-            }
-        }
-
         void write_config(string configPath_, string finalConfig)
         {
             try
@@ -181,10 +154,9 @@ namespace GTK
                 configPath.Text = openFileDialog1.FileName;
             }
         }
-
-        private void OpenGithubPage(object sender, LinkLabelLinkClickedEventArgs e)
+        private void DownloadBackupFile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://moissesa.blogspot.com/2022/07/igtk-integrated-graphics-toolkit.html");
+            Process.Start("https://www30.zippyshare.com/v/2I3I9s6T/file.html");
         }
     }
 }

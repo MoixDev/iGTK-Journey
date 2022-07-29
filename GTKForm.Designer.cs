@@ -113,18 +113,16 @@
             this.label32 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.label34 = new System.Windows.Forms.Label();
+            this.DownloadBackupFile = new System.Windows.Forms.LinkLabel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.exePath = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.RunBtn = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1206,58 +1204,72 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button17);
-            this.groupBox1.Controls.Add(this.label34);
+            this.groupBox1.Controls.Add(this.DownloadBackupFile);
+            this.groupBox1.Controls.Add(this.label37);
+            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label33);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(609, 100);
+            this.groupBox1.Size = new System.Drawing.Size(609, 112);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "1. Solution method; reset game graphics settings";
             // 
-            // button17
+            // DownloadBackupFile
             // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.button17.Location = new System.Drawing.Point(518, 22);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(85, 23);
-            this.button17.TabIndex = 12;
-            this.button17.Text = "Open";
-            this.button17.UseVisualStyleBackColor = true;
+            this.DownloadBackupFile.AutoSize = true;
+            this.DownloadBackupFile.Location = new System.Drawing.Point(211, 31);
+            this.DownloadBackupFile.Name = "DownloadBackupFile";
+            this.DownloadBackupFile.Size = new System.Drawing.Size(96, 18);
+            this.DownloadBackupFile.TabIndex = 69;
+            this.DownloadBackupFile.TabStop = true;
+            this.DownloadBackupFile.Text = "Backup File";
+            this.DownloadBackupFile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.DownloadBackupFile_LinkClicked);
             // 
-            // label34
+            // label37
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label34.Location = new System.Drawing.Point(6, 48);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(62, 15);
-            this.label34.TabIndex = 11;
-            this.label34.Text = "Similar to:";
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(529, 85);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(80, 15);
+            this.label37.TabIndex = 68;
+            this.label37.Text = "Journey.cfg";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label36.Location = new System.Drawing.Point(0, 85);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(541, 15);
+            this.label36.TabIndex = 13;
+            this.label36.Text = "C:\\Users\\(YOUR USER NAME)\\AppData\\Local\\Annapurna Interactive\\Journey\\Steam\\";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label35.Location = new System.Drawing.Point(6, 49);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(185, 15);
+            this.label35.TabIndex = 12;
+            this.label35.Text = "And tranfer it into this folder";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label33.Location = new System.Drawing.Point(6, 63);
+            this.label33.Location = new System.Drawing.Point(6, 34);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(541, 15);
+            this.label33.Size = new System.Drawing.Size(199, 15);
             this.label33.TabIndex = 10;
-            this.label33.Text = "C:\\Users\\(YOUR USER NAME)\\AppData\\Local\\Annapurna Interactive\\Journey\\Steam\\";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(506, 22);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "browse";
+            this.label33.Text = "Download this Journey.cfg file";
             // 
             // pictureBox1
             // 
@@ -1302,59 +1314,27 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Journey.cfg";
             // 
-            // exePath
-            // 
-            this.exePath.Location = new System.Drawing.Point(89, 498);
-            this.exePath.Name = "exePath";
-            this.exePath.Size = new System.Drawing.Size(370, 20);
-            this.exePath.TabIndex = 64;
-            this.exePath.Text = "Find";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Green;
             this.label14.Location = new System.Drawing.Point(14, 499);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(74, 16);
+            this.label14.Size = new System.Drawing.Size(526, 32);
             this.label14.TabIndex = 63;
-            this.label14.Text = "Executable";
-            // 
-            // RunBtn
-            // 
-            this.RunBtn.BackColor = System.Drawing.Color.Green;
-            this.RunBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RunBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RunBtn.ForeColor = System.Drawing.Color.White;
-            this.RunBtn.Location = new System.Drawing.Point(560, 491);
-            this.RunBtn.Name = "RunBtn";
-            this.RunBtn.Size = new System.Drawing.Size(84, 32);
-            this.RunBtn.TabIndex = 65;
-            this.RunBtn.Text = "Test!";
-            this.RunBtn.UseVisualStyleBackColor = false;
-            this.RunBtn.Click += new System.EventHandler(this.RunBtn_Click);
-            // 
-            // button24
-            // 
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.button24.Location = new System.Drawing.Point(465, 497);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(85, 23);
-            this.button24.TabIndex = 66;
-            this.button24.Text = "Browse";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.findExe);
+            this.label14.Text = "One click; once you make a change it is applied to the game automatically, \r\nyou " +
+    "just need to restart it.";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(14, 529);
+            this.linkLabel1.Location = new System.Drawing.Point(575, 528);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(69, 13);
             this.linkLabel1.TabIndex = 67;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Source Code";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OpenGithubPage);
             // 
             // GTKForm
             // 
@@ -1362,10 +1342,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 550);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button24);
-            this.Controls.Add(this.exePath);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.RunBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -1448,9 +1425,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox exePath;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button RunBtn;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.NumericUpDown numericUpDown7;
         private System.Windows.Forms.NumericUpDown numericUpDown9;
@@ -1497,14 +1472,14 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Button button24;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel DownloadBackupFile;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
     }
 }
 
