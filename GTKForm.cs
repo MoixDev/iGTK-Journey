@@ -53,9 +53,12 @@ namespace GTK
 
             string configFile = File.ReadAllText(configPath_, Encoding.Default);
 
-            string dynamic_pattern = @"<Low XYZ='\w+'".Replace("'", $"\"").Replace("XYZ", tag);
+            string dynamic_pattern = @"XYZ='\w+'".Replace("'", $"\"").Replace("XYZ", tag);
 
-            string finalConfig = Regex.Replace(configFile, dynamic_pattern, dynamic_pattern.Replace(@"\w+", text.ToLower()));
+            string finalConfig = Regex.Replace(configFile, dynamic_pattern, dynamic_pattern.
+                Replace(@"\w+", text.ToLower()));
+
+            write_config(configPath_, finalConfig);
 
             this.Text = dynamic_pattern + $"({text.ToLower()})";
         }
@@ -69,9 +72,13 @@ namespace GTK
 
             string configFile = File.ReadAllText(configPath_, Encoding.Default);
 
-            string dynamic_pattern = @"<Low XYZ='\d+'".Replace("'", $"\"").Replace("XYZ", tag);
+            string dynamic_pattern = @"XYZ='\d+'".Replace("'", $"\"").Replace("XYZ", tag);
 
-            string finalConfig = Regex.Replace(configFile, dynamic_pattern, dynamic_pattern.Replace(@"\d+", text));
+            string finalConfig = Regex
+                .Replace(configFile, dynamic_pattern, dynamic_pattern
+                .Replace(@"\d+", text));
+
+            write_config(configPath_, finalConfig);
 
             this.Text = dynamic_pattern + $"({text})";
         }
@@ -85,9 +92,13 @@ namespace GTK
 
             string configFile = File.ReadAllText(configPath_, Encoding.Default);
 
-            string dynamic_pattern = @"<Low XYZ='\d+'".Replace("'", $"\"").Replace("XYZ", tag);
+            string dynamic_pattern = @"XYZ='\d+'".Replace("'", $"\"").Replace("XYZ", tag);
 
-            string finalConfig = Regex.Replace(configFile, dynamic_pattern, dynamic_pattern.Replace(@"\d+", text));
+            string finalConfig = Regex.Replace(configFile, dynamic_pattern, dynamic_pattern
+                .Replace(@"\d+", text)
+                .Replace(".*", ""));
+
+            write_config(configPath_, finalConfig);
 
             this.Text = dynamic_pattern + $"({text})";
         }
@@ -119,6 +130,13 @@ namespace GTK
                 exePath.Text = openFileDialog1.FileName;
             }
         }
-        //:))
+
+        void write_config(string configPath_, string finalConfig)
+        {
+            StreamWriter sw = new StreamWriter(configPath_);
+            sw.Write("");
+            sw.Write(finalConfig);
+            sw.Close();
+        }
     }
 }

@@ -92,6 +92,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.label31 = new System.Windows.Forms.Label();
             this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
@@ -116,8 +118,6 @@
             this.exePath = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.RunBtn = new System.Windows.Forms.Button();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.button24 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -462,17 +462,17 @@
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 42;
             this.button4.Tag = "CubeTextureDim";
-            this.button4.Text = "4";
+            this.button4.Text = "32";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(266, 46);
+            this.button3.Location = new System.Drawing.Point(257, 46);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(84, 23);
             this.button3.TabIndex = 40;
             this.button3.Tag = "CubeTextureDim";
-            this.button3.Text = "2";
+            this.button3.Text = "16";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -482,7 +482,7 @@
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 39;
             this.button1.Tag = "CubeTextureDim";
-            this.button1.Text = "1";
+            this.button1.Text = "8";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label12
@@ -942,6 +942,28 @@
             this.tabPage3.Text = "<Screen>";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(185, 189);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(85, 20);
+            this.checkBox4.TabIndex = 123;
+            this.checkBox4.Tag = "VSync";
+            this.checkBox4.Text = "Enabeled";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(185, 83);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(85, 20);
+            this.checkBox3.TabIndex = 122;
+            this.checkBox3.Tag = "FXAA";
+            this.checkBox3.Text = "Enabeled";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -1027,7 +1049,7 @@
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(100, 22);
             this.numericUpDown11.TabIndex = 115;
-            this.numericUpDown11.Tag = "MultiSampleCount?";
+            this.numericUpDown11.Tag = "MultiSampleCount";
             this.numericUpDown11.Value = new decimal(new int[] {
             1,
             0,
@@ -1234,28 +1256,6 @@
             this.RunBtn.Text = "Test!";
             this.RunBtn.UseVisualStyleBackColor = false;
             this.RunBtn.Click += new System.EventHandler(this.RunBtn_Click);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(185, 83);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(85, 20);
-            this.checkBox3.TabIndex = 122;
-            this.checkBox3.Tag = "FXAA";
-            this.checkBox3.Text = "Enabeled";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(185, 189);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(85, 20);
-            this.checkBox4.TabIndex = 123;
-            this.checkBox4.Tag = "VSync";
-            this.checkBox4.Text = "Enabeled";
-            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // button24
             // 
