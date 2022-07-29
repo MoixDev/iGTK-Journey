@@ -119,5 +119,6 @@ namespace GTK
                 exePath.Text = openFileDialog1.FileName;
             }
         }
+        //:)
     }
 }
