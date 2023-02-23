@@ -1,6 +1,6 @@
 ![Captura de pantalla 2022-07-29 144758](https://user-images.githubusercontent.com/82337156/181833376-559d4417-6866-4ab5-96c6-a34cdeb10396.png)
 
-Release 1.0.1 -> Download From Zippyshare => https://www2.zippyshare.com/v/06eC3vH9/file.html
+Release 1.0.1 -> Download From MediaFire => https://www.mediafire.com/file/23a43hkct0u40iu/iGTK-Journey.zip/file
 ## **_What is igtk?_**
 
 A specific program for each game designed to manipulate its graphics beyond the limits imposed by the game itself.
